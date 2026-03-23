@@ -98,6 +98,7 @@ ssh-add "$HOME/.ssh/id_ed25519"
 # 9. Cleanup
 echo " Cleaning up..."
 sudo apt autoremove -y
+sudo dpkg --remove-architecture i386
 
 # Display public key
 echo "📋 Copy this SSH key and add it to GitHub:"
