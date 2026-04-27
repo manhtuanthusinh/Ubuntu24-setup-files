@@ -64,6 +64,7 @@ fi
 # 6. Cleanup
 echo "============ Finalizing... ============"
 sudo apt autoremove -y
+sudo dpkg --remove-architecture i386
 
 echo "--------------------------------------------------"
 echo "📋 Add this SSH key to GitHub (https://github.com/settings/keys):"
